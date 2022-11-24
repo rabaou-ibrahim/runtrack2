@@ -1,0 +1,27 @@
+@keyframes anim3 {
+    from {
+        background-color: orangered;
+    }
+    
+    to {
+        background-color: orange;
+    }
+}
+
+body {
+    color: white;
+    animation-name: anim3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+
+.style3 {
+    display: flex;
+    font-size: medium;   
+    color: white;
+    animation-name: anim3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;  
+}

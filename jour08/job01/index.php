@@ -28,7 +28,7 @@
             echo "Le nombre de visites est de " . $_SESSION["nb_visites"];
             $_SESSION["nb_visites"]++;
         }
-        else  {
+        else {
             $_SESSION["nb_visites"] = 1;
             echo ("La session n'existe pas");
         }
@@ -39,7 +39,7 @@
     session_start();
     log_count();
     if(array_key_exists('button', $_GET)) {
-        session_reset();
+        session_destroy();
     }
     
 ?>
